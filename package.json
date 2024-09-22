@@ -1,0 +1,23 @@
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "startOld": "node app.js"
+  },
+  "author": "BilalBinShafiq",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express": "^4.21.0",
+    "https-proxy-agent": "^7.0.5",
+    "morgan": "^1.10.0",
+    "ps-list": "^8.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.6"
+  }
+}
