@@ -4,8 +4,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "startOld": "node app.js"
+    "start:dev": "nodemon server.js",
+    "start:prod": "set NODE_ENV=production nodemon server.js",
+    "start:default": "node server.js"
   },
   "author": "BilalBinShafiq",
   "license": "MIT",
@@ -13,13 +14,16 @@
   "dependencies": {
     "axios": "^1.7.7",
     "chromedriver": "^129.0.0",
+    "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "https-proxy-agent": "^7.0.5",
+    "mongoose": "^8.6.3",
     "morgan": "^1.10.0",
     "ps-list": "^8.1.1",
     "selenium-webdriver": "^4.25.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^3.1.6"
   }
 }

@@ -12,7 +12,11 @@ const loginGoLogin = require("./scripts/loginGoLogin");
 const app = express();
 
 // 1) MIDDLEWARE
-app.use(morgan("dev"));
+console.log(process.env.NODE_ENV);
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan("dev"));
+}
+
 app.use(express.json()); // Middleware to parse JSON body
 app.use((request, response, next) => {
   console.log("Hello from middleware");
